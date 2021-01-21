@@ -22,11 +22,18 @@
 
         
         <script> 
-        
-            // window.alert('Minha primeira mensagem') /*comando para aparecer um alerta na tela*/
-            //  window.confirm('Está gostando de Java Script') /*comando para aparecer uma confirmação na tela*/
-            window.prompt('Qual é o seu nome?') /*comando para aparecer uma pergunta na tela*/
+            // se eu quiser definir inteiro ou real tem que usar o Number.parseInt uo Float
+            // se quiser deixar por conta do usuário pode utilizar apenas Number(n1)
 
+            // segue 1 exemplo de cada abaixo
+
+            var n1 = Number.parseFloat(prompt('Digite um número:'))
+            var n2 =  Number(window.prompt('Digite outro número:'))
+
+            var s = n1 + n2
+
+            window.alert(`A soma entre ${n1} e ${n2} é igual a ${s}`)
+           
         </script>
     </body>
 </html>
