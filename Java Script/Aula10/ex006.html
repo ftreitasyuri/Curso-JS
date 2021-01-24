@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #area {
+            width: 200px;
+            height: 200px;
+            background: rgb(114, 223, 114);
+            line-height: 200px;
+            text-align: center;
+            font-size: 2em;
+        }
+    </style>
+
+
+</head>
+<body>
+    <!-- aqui a baixo temos a forma de fazer usando HTML la em script temos como fazer em javaS-->
+    <!-- onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()"> -->
+    <div id="area"> 
+    
+        Interaja...
+    </div>
+    
+
+
+
+
+
+
+    <script>
+
+        var a = window.document.getElementById('area')
+
+        a.addEventListener('click', clicar)
+        a.addEventListener('mouseenter', entrar)
+        a.addEventListener('mouseout', sair)
+
+
+
+        function clicar() {
+            a.innerText = 'Clicou'
+            a.style.background = 'red'
+        }
+
+        function entrar() {
+            a.innerText = 'Entrou'
+        }
+
+        function sair() {
+            a.innerText = 'Saiu'
+            a.style.background = 'rgb(114, 223, 114)'
+        }
+
+
+    </script>
+</body>
+</html>

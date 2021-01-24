@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+
+    <style>
+        body {
+            background: rgb(14, 10, 10);
+            color: white;
+            font: nomal 18pt Arial;
+        }
+
+
+    </style>
+
+</head>
+<body>
+    <h1>Iniciando estudo com DOM</h1>
+    <p>aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em Java Script</p>
+    <div>Clique em mim     </div>
+
+    <div class="teste"> Ola, tudo bem ?</div>
+
+
+
+
+<script>
+
+    // window.document.write(window.document.URL)
+// se o get estiver no plural é necessário usar o [] para definir o numero da tag ou nome ou class que vc quer mexer ou mostrar.
+
+    var h1 = window.document.getElementsByTagName('h1')[0]
+
+    window.document.write('Está escrito assim ' + h1.innerText)
+    // na linha acima o innertext tras só o texto se quiser trazer a formatação vc precisa usar o inneerHTML
+
+    h1.style.color = 'blue'
+
+    // h1.style.color = 'red' esse comando a esquerda é para alterar a cor do h1
+
+    // aqui acima temos a forma de escrever o conteudo de h1 na tela em JS
+
+    var corpo = window.document.body
+
+    // window.alert(h1.innerHTML)
+
+    // corpo.style.background = 'orange' <- esse comando do lado esquerdo é para trocar a cor da variavel corpo que recebeu o body
+
+    // daqui para baixo temos a alteração ou edição com seletores
+    var d = window.corpo.querySelector('div.teste')
+    
+    
+    d.style.color = 'blue'
+    d.style.background = 'white'
+
+
+
+
+</script>
+
+</body>
+</html>
