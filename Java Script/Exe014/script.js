@@ -5,9 +5,10 @@ function carregar () {
 
     var data = new Date()
 
-    var hora = data.getHours()
+    // var hora = data.getHours()
 
-    // var hora = 21  esse cod aolado é para forçar um horario
+    var hora = 21  
+    // esse cod aolado é para forçar um horario
 
     msg.innerHTML = `Agora são ${hora} horas.`
 
